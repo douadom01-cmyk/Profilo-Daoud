@@ -1,0 +1,377 @@
+.projects-section {
+    padding: 5rem 0;
+    background: linear-gradient(
+        135deg,
+        hsl(222, 20%, 8%) 0%,
+        hsl(222, 25%, 6%) 100%
+    );
+    position: relative;
+}
+
+.projects-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        ellipse at center,
+        hsla(180, 100%, 70%, 0.05) 0%,
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: linear-gradient(
+        145deg,
+        hsl(222, 18%, 12%) 0%,
+        hsl(222, 15%, 8%) 100%
+    );
+    border: 1px solid hsl(222, 15%, 20%);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    box-shadow:
+        0 4px 15px hsla(0, 0%, 0%, 0.3),
+        0 2px 8px hsla(0, 0%, 0%, 0.2);
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        145deg,
+        hsla(180, 100%, 70%, 0.1) 0%,
+        hsla(200, 100%, 75%, 0.05) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 1.25rem;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: hsl(180, 100%, 70%, 0.5);
+    box-shadow:
+        0 25px 50px hsla(0, 0%, 0%, 0.5),
+        0 10px 30px hsla(180, 100%, 70%, 0.3),
+        0 0 40px hsla(180, 100%, 70%, 0.2);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        hsl(222, 15%, 15%) 0%,
+        hsl(222, 18%, 10%) 100%
+    );
+}
+
+.project-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        transparent 40%,
+        hsla(222, 18%, 10%, 0.4) 70%,
+        hsla(222, 18%, 10%, 0.8) 100%
+    );
+    z-index: 2;
+    transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-image::after {
+    opacity: 0.6;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.15);
+    filter: brightness(1) contrast(1.2);
+}
+
+.project-content {
+    padding: 2rem 1.5rem;
+    position: relative;
+    z-index: 3;
+    background: linear-gradient(
+        135deg,
+        hsl(222, 18%, 11%) 0%,
+        hsl(222, 15%, 9%) 100%
+    );
+}
+
+.project-content .Note{
+    color: hsl(180, 100%, 70%) ;
+}
+
+.project-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 1.25rem;
+    text-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.3);
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+    color: hsl(180, 100%, 85%);
+}
+
+.project-card .btn-glow {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    background: linear-gradient(
+        135deg,
+        hsl(222, 25%, 8%) 0%,
+        hsl(222, 20%, 6%) 100%
+    );
+    border: 2px solid hsl(180, 100%, 70%);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card .btn-glow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        hsla(180, 100%, 70%, 0.2),
+        transparent
+    );
+    transition: left 0.6s ease;
+}
+
+.project-card .btn-glow:hover::before {
+    left: 100%;
+}
+
+.project-card .btn-glow:hover {
+    transform: none;
+    border-color: hsl(180, 100%, 80%);
+    box-shadow:
+        0 0 25px hsla(180, 100%, 70%, 0.6),
+        0 0 50px hsla(180, 100%, 70%, 0.4),
+        inset 0 0 25px hsla(180, 100%, 70%, 0.2);
+    background: linear-gradient(
+        135deg,
+        hsl(180, 100%, 70%, 0.1) 0%,
+        hsl(222, 20%, 6%) 100%
+    );
+}
+
+
+/* Enhanced section header styling */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.section-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: hsl(194, 100%, 74%);
+    margin-bottom: 1.25rem;
+    text-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.4);
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        hsl(180, 100%, 70%) 0%,
+        hsl(200, 100%, 75%) 100%
+    );
+    border-radius: 2px;
+    box-shadow: 0 2px 8px hsla(180, 100%, 70%, 0.5);
+}
+
+.section-subtitle {
+    font-size: 1.1875rem;
+    color: hsl(194, 100%, 74%);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .projects-section {
+        padding: 4rem 0;
+    }
+
+    .projects-container {
+        padding: 0 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 3rem 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .project-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .project-title {
+        font-size: 1.125rem;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.0625rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        padding: 0 0.75rem;
+    }
+
+    .projects-grid {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        border-radius: 1rem;
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+    .project-content {
+        padding: 1.25rem 0.875rem;
+    }
+
+    .project-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-card .btn-glow {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .project-content {
+        padding: 1rem 0.75rem;
+    }
+
+    .project-card .btn-glow {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.8125rem;
+    }
+}

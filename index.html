@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <!-- إعدادات أساسية للصفحة -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daoud-dev</title>
+        <link rel="icon" href="profile.jpg" type="image/x-icon" />
+
+        <!-- ربط ملفات CSS -->
+        <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/projects.css" />
+        <link rel="stylesheet" href="css/services.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        
+
+        <!-- Remix Icon Library -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- شريط التنقل العلوي -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="navbar-brand">
+                    <a href="#home" class="brand-link">
+                        <span class="brand-text">Daoud.dev</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="navbar-nav">
+                    <a href="#home" class="nav-link">الرئيسية</a>
+                    <a href="#projects" class="nav-link">المشاريع</a>
+                    <a href="#services" class="nav-link">الخدمات</a>
+                    <a href="#contact" class="nav-link">تواصل معنا</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- القسم الرئيسي - الصفحة الرئيسية -->
+        <section id="home" class="home-section">
+            <div class="home-container">
+                <!-- محتوى النص الرئيسي -->
+                <div class="home-content">
+                    <h1 class="home-title">مرحباً، أنا المختار داود</h1>
+                    <p class="home-subtitle">مطور ألعاب متخصص في محرك Unity</p>
+                    <p class="home-description">
+                        لدي خبرة تزيد عن سنتين في تطوير الألعاب باستخدام محرك
+                        Unity. أتخصص في إنشاء أنظمة اللعب المعقدة، وتطوير آليات
+                        الحركة، وبناء واجهات المستخدم التفاعلية. أقدم خدمات
+                        تطوير ميكانيكيات الألعاب للشركات والمطورين المستقلين.
+                    </p>
+                </div>
+
+                <!-- صورة المطور -->
+                <div class="home-image">
+                    <img
+                        src="profile.jpg"
+                        alt="صورة البروفيل"
+                        class="profile-image"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المشاريع -->
+        <section id="projects" class="projects-section">
+            <div class="projects-container">
+                <!-- عنوان القسم -->
+                <div class="section-header">
+                    <h2 class="section-title">مشاريعي المطورة</h2>
+                    <p class="section-subtitle">
+                        مجموعة من الألعاب التي طورتها باستخدام محرك Unity
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/Just-fly.png" alt="Just Fly Game" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Just Fly</h4>
+                            <a
+                                href="https://daoud131.itch.io/just-fly"
+                                target="_blank"
+                                class="btn btn-glow"
+                            >
+                                تحميل اللعبة
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="img/Shoot-to-infinity.png"
+                                alt="Shoot to Infinity Game"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Shoot to Infinity</h4>
+                            <a
+                                href="https://daoud131.itch.io/shoot-to-infinity"
+                                target="_blank"
+                                class="btn btn-glow"
+                            >
+                                تحميل اللعبة
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="img/Terery-Deme.png"
+                                alt="Terery Deme Game"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Terery Deme</h4>
+                            <a
+                                href="https://daoud131.itch.io/terery"
+                                target="_blank"
+                                class="btn btn-glow"
+                            >
+                                تحميل اللعبة
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/Tgadtr.png" alt="Tgadtr Game" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Tgadtr</h4>
+                            <a
+                                href="https://daoud131.itch.io/tgadtr"
+                                target="_blank"
+                                class="btn btn-glow"
+                            >
+                                تحميل اللعبة
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/only-down.png" alt="Only Down Game" />
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Only Down</h4>
+                            <a
+                                class="Note"
+                            >
+                                اللعبة غير متوفرة
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الخدمات -->
+        <section id="services" class="services-section">
+            <div class="services-container">
+                <!-- عنوان القسم -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        الخدمات - برمجة ميكانيكيات الألعاب
+                    </h2>
+                    <p class="section-subtitle">
+                        أقدم لك برمجة ميكانيكيات الألعاب البسيطة والمرنة
+                        باستخدام محرك Unity
+                    </p>
+                </div>
+
+                <div class="service-main-card">
+                    <div class="service-main-emoji">🎮</div>
+                    <p class="service-main-text">
+                        أقدم لك برمجة ميكانيكيات الألعاب البسيطة والمرنة
+                        باستخدام محرك Unity. يمكنك اختيار ما تحتاجه بالضبط، مثل:
+                        <br />• حركة اللاعب (الجري، القفز، التحكم السلس) <br />•
+                        نظام واجهة مستخدم بسيط (قوائم، عدادات النقاط) <br />•
+                        نظام الأعداء (الحركة الأساسية والهجمات) <br />• أي
+                        ميكانيكية أخرى تطلبها، خطوة بخطوة <br /><br />
+                        <strong class="service-highlight">مهم:</strong>
+                        كل ميكانيكية تُبنى حسب طلبك، ليس حزمة جاهزة - أجزاء
+                        مستقلة يمكنك بناء لعبتك عليها.
+                    </p>
+                </div>
+
+                <!-- شبكة الخدمات -->
+                <div class="services-grid">
+                    <!-- عند الطلب -->
+                    <div class="service-card">
+                        <div class="service-icon">📋</div>
+                        <h4 class="service-title">عند الطلب</h4>
+                        <p class="service-description">
+                            • حدد الميكانيكية التي تريدها
+                            <br />• اذكر نوع الملفات المطلوبة (مشروع Unity كامل،
+                            سكريبت فقط، إلخ)
+                        </p>
+                    </div>
+
+                    <!-- ما تحصل عليه -->
+                    <div class="service-card">
+                        <div class="service-icon">🎁</div>
+                        <h4 class="service-title">ما تحصل عليه</h4>
+                        <p class="service-description">
+                            • مستوى لعبة واحد
+                            <br />• ميكانيكية واحدة مكتملة <br />• عينة عمل
+                            للميزة المطلوبة <br />• ملفات منظمة وسهلة التعديل
+                            <br />• دعم سريع حتى ترضى عن النتيجة
+                        </p>
+                    </div>
+
+                    <!-- الالتزام -->
+                    <div class="service-card">
+                        <div class="service-icon">🤝</div>
+                        <h4 class="service-title">الالتزام</h4>
+                        <p class="service-description">
+                            أعدك بالحفاظ على البساطة وسهولة الفهم في العمل، مع
+                            توفير تواصل مفتوح لأي استفسارات.
+                        </p>
+                    </div>
+
+                    <!-- مميزات الخدمة -->
+                    <div class="service-card">
+                        <div class="service-icon">⭐</div>
+                        <h4 class="service-title">مميزات الخدمة</h4>
+                        <p class="service-description">
+                            • خدمة مرنة
+                            <br />• تسليم سريع في الوقت المحدد <br />• كود نظيف
+                            ومنظم وسهل القراءة <br />• دعم حركة اللاعب، القتال،
+                            جمع العناصر، وتفعيل الأبواب
+                        </p>
+                    </div>
+
+                    <!-- دعم Unity -->
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h4 class="service-title">دعم Unity</h4>
+                        <p class="service-description">
+                            • يعمل مع Unity 2D و 3D
+                            <br />• تعديلات صغيرة مجانية بعد التسليم (ضمن
+                            المعقول) <br />• عرض تجريبي قابل للاختبار قبل
+                            التسليم النهائي
+                        </p>
+                    </div>
+
+                    <!-- التواصل -->
+                    <div class="service-card">
+                        <div class="service-icon">💬</div>
+                        <h4 class="service-title">التواصل والجودة</h4>
+                        <p class="service-description">
+                            • تواصل مستمر لضمان الرضا
+                            <br />• ملاحظاتك تؤخذ بجدية وتُطبق بعناية
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <header class="section-header">
+                    <h2 class="section-title">تواصل معنا</h2>
+                    <p class="section-subtitle">
+                        هل لديك مشروع في ذهنك؟ دعنا نعمل معاً
+                    </p>
+                </header>
+
+                <div class="contact-grid">
+                    <a
+                        href="mailto:elmokhtaridaoud7@gmail.com"
+                        class="contact-card"
+                        aria-label="إرسال بريد إلكتروني"
+                    >
+                        <div class="contact-icon">
+                            <i class="ri-mail-fill"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>elmokhtaridaoud7@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/people/Mar-Debiddo/pfbid02gqyEQcFS86Jdsw6rdkLowT7rdmy73VpzNyKPESEYh5z1Sw2GoK66tqhKuCSQS55Al/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                        aria-label="زيارة صفحة الفيسبوك"
+                    >
+                        <div class="contact-icon">
+                            <i class="ri-facebook-fill"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>فيسبوك</h3>
+                            <p>تابعني على Facebook</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://www.youtube.com/channel/UCMJ8xE0KmSgk82LMffukGqg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                        aria-label="زيارة قناة اليوتيوب"
+                    >
+                        <div class="contact-icon">
+                            <i class="ri-youtube-fill"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>يوتيوب</h3>
+                            <p>اشترك في القناة</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://khamsat.com/user/daoud1313"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                        aria-label="زيارة حساب خمسات"
+                    >
+                        <div class="contact-icon">
+                            <i class="ri-briefcase-fill"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>خمسات</h3>
+                            <p>اطلب خدماتي المتخصصة</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p>© 2025 Daoud.dev - جميع الحقوق محفوظة.</p>
+            </div>
+        </footer>
+
+        <!-- Navbar JavaScript -->
+        <script src="js/navbar.js"></script>
+    </body>
+</html>
